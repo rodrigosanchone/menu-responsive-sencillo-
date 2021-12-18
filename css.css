@@ -1,0 +1,50 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    background-color: burlywood;
+    margin: 0;
+}
+
+.logo{
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.menu{
+    margin: 1.2rem 0;
+    display:  flex;
+
+}    
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    border: 1px solid;
+    text-align: center;
+    padding: 1.5rem;
+  
+}
+
+.menu a:hover{
+    background-color: #fff;
+}
+
+
+
+@media (max-width:768px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu a{
+        padding:  1.5rem 3rem;
+    }
+}
